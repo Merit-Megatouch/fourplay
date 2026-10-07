@@ -1,6 +1,6 @@
 # FOURPLAY (fourplay)
 
-Status: **playable** — the first legacy-family port: board, touch columns, opponent animations,
+Status: runs on the reconstructed legacy engine (batch smoke test 2026-10-07: renders, takes touches). Hand play-test pending.
 scoring, saved hi-score. GameId 7, 640×480. Facts: [notes/scaffold.md](notes/scaffold.md).
 
 ## Checklist
@@ -23,3 +23,5 @@ scoring, saved hi-score. GameId 7, 640×480. Facts: [notes/scaffold.md](notes/sc
 - 2026-10-07 — Played by hand. Fixed: touches were scaled twice (SDL already reports logical
   coordinates), and animations were mangled because .dlt frames after the first only hold the
   pixels that change — they are now composited. Best so far 10,595.
+
+- 2026-10-07 — runs on src/legacy (sprite engine, gendef records, Allegro subset); smoke-tested headless.
